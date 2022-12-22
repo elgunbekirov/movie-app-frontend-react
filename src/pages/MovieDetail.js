@@ -7,14 +7,14 @@ import { useDispatch } from "react-redux";
 import { Toast } from 'primereact/toast';
 
 export default function MovieDetail() {
-  let { id } = useParams();
+  let { title } = useParams();
   const dispatch = useDispatch();
   const toast = useRef(null)
   const [movie, setMovie] = useState({});
 
   useEffect(() => {
     let movieService = new MovieService();
-    movieService.getMovieByName(id).then((result) => setMovie(result.data));
+    movieService.getMovieByTitle(title).then((result) => setMovie(result.data));
   }, []);
 
   const header = (
