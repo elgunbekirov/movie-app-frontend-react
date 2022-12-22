@@ -1,0 +1,22 @@
+{
+  "movies": [
+    {
+      "title": "Vikings",
+      "releaseYear": "2015",
+      "rating": "12",
+      "synopsis": "Historical"
+    },
+    {
+      "title": "Breaking Bad",
+      "releaseYear": "2017",
+      "rating": "10",
+      "synopsis": "Action"
+    },
+    {
+      "title": "Protectors",
+      "releaseYear": "2019",
+      "rating": "15",
+      "synopsis": "Comedy"
+    }
+  ]
+}
