@@ -1,6 +1,6 @@
 import React from "react";
 import MovieList from "../pages/MovieList";
-import {Route,Routes} from "react-router-dom"
+import {Route, Routes} from "react-router-dom"
 import MovieDetail from "../pages/MovieDetail";
 import NotFound from "../pages/NotFound";
 

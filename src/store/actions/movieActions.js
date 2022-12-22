@@ -1,9 +1,9 @@
 export const SET_MOVIES = "SET_MOVIES"
 export const GET_MOVIES = "GET_MOVIES"
 
-export const setMovies = (movies)=>({
+export const setMovies = (data)=>({
     type:SET_MOVIES,
-    payload:movies
+    payload:data
 })
 
 export const getMovies = ()=>({

@@ -30,7 +30,7 @@ export default function MovieDetail() {
   const footer = (
     <span>
       <Button
-        label="Add To Cart"
+        label="Close"
         icon="pi pi-times"
         className="p-button-secondary ml-2" />
     </span>
@@ -47,7 +47,7 @@ export default function MovieDetail() {
         header={header}
       >
         <p className="m-0" style={{ lineHeight: "1.5" }}>
-           {movie.sinopsys}
+           {movie.synopsis}
         </p>
       </Card>
     </div>

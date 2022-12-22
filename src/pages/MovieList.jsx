@@ -10,10 +10,12 @@ export default function MovieList() {
 
   useEffect(() => {
     let movieService = new MovieService();
-    movieService.getMovies().then((result) => setMovies(result.data));
+    movieService.getMovies().then((result) => {
+      setMovies(result.data.data);
+    });
   }, []);
 
-  const handleGotoDetail =(event) =>navigator(`/movies/detail/${event.data.id}`)
+  const handleGotoDetail = (event) => navigator(`/movies/detail/${event.data.id}`)
 
   return (
     <div>
@@ -22,7 +24,7 @@ export default function MovieList() {
           <Column field="title" header="Title"></Column>
           <Column field="releaseYear" header="Relese Year"></Column>
           <Column field="rating" header="Rating"></Column>
-          <Column field="sinopsys" header="Sinopsys"></Column>
+          <Column field="synopsis" header="Sinopsys"></Column>
         </DataTable>
       </div>
     </div>
