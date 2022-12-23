@@ -14,7 +14,7 @@ export default function MovieDetail() {
 
   useEffect(() => {
     let movieService = new MovieService();
-    movieService.getMovieByTitle(title).then((result) => setMovie(result.data));
+    movieService.getMovieByTitle(title).then((result) => setMovie(result.data.data));
   }, []);
 
   const header = (
